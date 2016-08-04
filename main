@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
+</head>
+
+<div class="callout secondary">
+  <div class="row">
+    <div class="small-12 column">
+      <h1>Colin King-Bailey</h1>
+      <h4>wants to code</h4>
+      <h5>and needs to get some COLORRRR up in here</h5>
+      <p>Hey, here's an idea: define some sweet colors in Scss, and, um, like assign them to some o' these stock classes. Is that gonna work in CodePen? I gotta see about some libraries to add onto this badboy.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 column">
+    <ul class="menu align-right">
+      <li><a href="#">about</a></li>
+      <li><a href="#">work</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 column">
+    <div class="row">
+      <div class="small-10 small-offset-1 column">
+        <h2>work</h2>
+        <div class="row">
+          <div class="small-3 column">
+            <a><img></a>
+          </div>
+          <div class="small-3 column">
+            <a><img></a>
+          </div>
+          <div class="small-3 column">
+            <a><img></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--contact panel should be centered.-->
+<div class="row">
+  <div class="small-4 small-offset-4 column">
+    <h2>contact</h2>
+    <div class="callout primary">
+      <h4>ckingbailey@gmail.com</h4>
+    </div>
+  </div>
+</div>
+
+<div class="float-right">
+  <div class="callout primary">
+    <p>created by CKB using Foundation</p>
+  </div>
+</div>
+</html>
