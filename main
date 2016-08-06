@@ -33,14 +33,14 @@
       <div class="small-10 small-offset-1 column">
         <h2>work</h2>
         <div class="row">
-          <div class="small-3 column">
-            <a><img src="bisbeevacationrentalThumbnail.png" class="callout image-responsive"></img></a>
+          <div class="small-4 column">
+            <a href="#"><img src="bisbeevacationrentalThumbnail.png" class="callout image-responsive"></img></a>
           </div>
-          <div class="small-3 column">
-            <a><img src="ckingbaileyThumbnail.png" class="callout image-responsive"></img></a>
+          <div class="small-4 column">
+            <a href="#"><img src="ckingbaileyThumbnail.png" class="callout image-responsive"></img></a>
           </div>
-          <div class="small-3 column" class="callout">
-            <a><img></img></a>
+          <div class="small-4 column">
+            <a href="#"><img src="katchadourianThumbnail.png" class="callout image-responsive"></img></a>
           </div>
         </div>
       </div>
