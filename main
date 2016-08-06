@@ -26,6 +26,7 @@
   </div>
 </div>
 
+<!--"work" section-->
 <div class="row">
   <div class="small-12 column">
     <div class="row">
@@ -33,33 +34,33 @@
         <h2>work</h2>
         <div class="row">
           <div class="small-3 column">
-            <a><img></a>
+            <a><img src="bisbeevacationrentalThumbnail.png" class="callout image-responsive"></img></a>
           </div>
           <div class="small-3 column">
-            <a><img></a>
+            <a><img src="ckingbaileyThumbnail.png" class="callout image-responsive"></img></a>
           </div>
-          <div class="small-3 column">
-            <a><img></a>
+          <div class="small-3 column" class="callout">
+            <a><img></img></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 <!--contact panel should be centered.-->
-<div class="row">
-  <div class="small-4 small-offset-4 column">
-    <h2>contact</h2>
-    <div class="callout primary">
-      <h4>ckingbailey@gmail.com</h4>
+    <div class="row">
+      <div class="small-4 small-offset-4 column">
+        <h2>contact</h2>
+        <div class="callout primary">
+          <h4>ckingbailey@gmail.com</h4>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="float-right">
-  <div class="callout primary">
-    <p>created by CKB using Foundation</p>
+    <div class="float-right">
+      <div class="callout warning">
+        <p>created by CKB using Foundation</p>
+      </div>
+    </div>
   </div>
 </div>
 </html>
