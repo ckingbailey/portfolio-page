@@ -6,9 +6,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-  <style>
-    h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", cursive;}
-  </style>
 </head>
 
 <header class="header">
