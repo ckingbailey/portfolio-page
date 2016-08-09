@@ -6,12 +6,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-  <style>
-    h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", cursive;}
-  </style>
 </head>
 
-<div class="callout secondary">
+<header class="header">
+
+  <h1 class="headline"><a name="about"></a>Colin King-Bailey  <small>wants to code for you</small></h1>
+
+  <ul class="header-subnav">
+
+    <li><a href="#about">about</a></li>
+
+    <li><a href="#work">work</a></li>
+
+    <li><a href="#contact">contact</a></li>
+
+  </ul>
+
+</header>
+<!--<div class="callout secondary">
   <div class="row">
     <div class="small-12 column">
       <h1>Colin King-Bailey</h1>
@@ -29,14 +41,14 @@
     </ul>
     </div>
   </div>
-</div>
+</div>-->
 
 <!--work section-->
 <div class="row">
   <div class="small-12 column">
     <div class="row">
       <div class="small-10 small-offset-1 column">
-        <h2>work</h2>
+        <h2><a name="work"></a>work</h2>
         <div class="row">
           <div class="small-4 column">
             <a href="#"><img src="bisbeevacationrentalThumbnail.png" class="callout image-responsive"></img></a>
@@ -54,7 +66,7 @@
 <!--contact section-->
     <div class="row">
       <div class="small-4 small-offset-4 column">
-        <h2>contact</h2>
+        <h2><a name="contact"></a>contact</h2>
         <div class="callout primary">
           <div class="row">
             <div class="small-10 column">
@@ -73,9 +85,8 @@
 
     <div class="float-right">
       <div class="callout warning">
-        <p>created by CKB using Foundation</p>
+        <p><small>created by CKB using Foundation</small></p>
       </div>
     </div>
   </div>
 </div>
-</html>
