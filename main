@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <link href="css/Zurb-header-footer.css" rel="stylesheet">
   <link href="css/fonts" rel="stylesheet">
-  <link href="css/mouseoverThumbnail.css" rel="stylesheet">"
+  <link href="css/mouseoverThumbnail.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +42,8 @@
         </div>
         
         
-        <div class="small-4 column callout iframe-wrap loaded">
+        <div class="small-4 column iframe-wrap loaded">
+          <div class="callout">
           <a href="#">
           <!--<img src="img/ckingbaileyThumbnail.png" class="callout large image-responsive"></img>-->
           <iframe src="http://ckingbailey.com" scrolling="no"></iframe>
@@ -50,6 +51,7 @@
             <p>My personal webpage...very personal.</p>
           </div>
           </a>
+          </div>
         </div>
         
         
