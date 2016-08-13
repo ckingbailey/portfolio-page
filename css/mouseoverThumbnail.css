@@ -1,0 +1,8 @@
+iframe {
+    max-width: 100% !important;
+    box-sizing: border-box;
+    scrolling: no;
+    overflow: hidden;
+    
+}
+
