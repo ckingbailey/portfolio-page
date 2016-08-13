@@ -32,27 +32,33 @@
 </header>
 
 <!--work section-->
-  <!--<div class="row">
-    <div class="small-12 column">-->
+
+  <div class="row">
+    <div class="small-10 small-offset-1 column">
+      <h2><a name="work"></a>work</h2>
       <div class="row">
-        <div class="small-10 small-offset-1 column">
-          <h2><a name="work"></a>work</h2>
-          <div class="row">
-            <div class="small-4 column">
-              <a href="#"><img src="img/bisbeevacationrentalThumbnail.png" class="callout image-responsive"></img></a>
-            </div>
-          <div class="small-4 column">
-            <a href="#">
-              <!--<img src="img/ckingbaileyThumbnail.png" class="callout large image-responsive"></img>-->
-              <iframe src="http://ckingbailey.com" class="callout image-responsive" scrolling="no"></iframe>
-            </a>
-          </div>
-          <div class="small-4 column">
-            <a href="#"><img src="img/katchadourianThumbnail.png" class="callout image-responsive"></img></a>
-          </div>
+        <div class="small-4 column">
+          <a href="#"><img src="img/bisbeevacationrentalThumbnail.png" class="callout image-responsive"></img></a>
         </div>
+        
+        
+        <div class="small-4 column callout iframe-wrap loaded">
+          <a href="#">
+          <!--<img src="img/ckingbaileyThumbnail.png" class="callout large image-responsive"></img>-->
+          <iframe src="http://ckingbailey.com" scrolling="no"></iframe>
+          <div class="meta-overlay">
+            <p>My personal webpage...very personal.</p>
+          </div>
+          </a>
+        </div>
+        
+        
+      <div class="small-4 column">
+        <a href="#"><img src="img/katchadourianThumbnail.png" class="callout image-responsive"></img></a>
+      </div>
       </div>
     </div>
+  </div>
 
 <!--contact section-->
   <div class="row">
@@ -72,8 +78,7 @@
       </div>
     </div>
   </div>
-<!--</div>
-</div>-->
+
 </div>
 
 <footer class="footer">
