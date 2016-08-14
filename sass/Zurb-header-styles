@@ -41,7 +41,7 @@ $transition: all .35s ease-in-out;
 
 text-align: center;
 
-background: $header-bg;
+background: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Oakland_California_20041129.jpg') no-repeat center center $header-bg;
 
 background-size: cover;
 

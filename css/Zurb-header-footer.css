@@ -1,7 +1,9 @@
 @charset "UTF-8";
 .header {
   text-align: center;
-  background: #335588;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Aerial_view_of_city_of_Oakland_2.jpg") no-repeat center center #335588;
+  /*hang onto this link as an alternate header bg*/
+  /*https://upload.wikimedia.org/wikipedia/commons/c/cb/Aerial_view_of_city_of_Oakland_1.jpg**/
   background-size: cover;
   position: relative;
   overflow: visible;
@@ -72,4 +74,4 @@ text-align: center;
       content: "";
       padding: 0 0.4rem 0 0.8rem; }
 
-/*# sourceMappingURL=Zurb-header-styles.css.map */
+/*# sourceMappingURL=Zurb-header-footer.css.map */
