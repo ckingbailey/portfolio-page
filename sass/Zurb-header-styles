@@ -5,7 +5,7 @@
 
 $dark-grey: #292c2f;
 
-$medium-grey: #8f9296;
+$medium-grey: #8f92c0;
 
 $light-grey: #8d9093;
 
@@ -19,7 +19,7 @@ $dark-orange: #2f2c20;
 
 $footer-bg: $dark-orange;
 
-$subtext-color: $medium-grey;
+$copy-text-color: $medium-grey;
 
 $lead-color: $light-grey;
 
@@ -174,7 +174,7 @@ font-size: 1.8rem;
 margin: 0 0 1rem;
 }
 &.copyright {
-color: $subtext-color;
+color: $copy-text-color;
 font-size: 0.875rem;
 margin: 0;
 }

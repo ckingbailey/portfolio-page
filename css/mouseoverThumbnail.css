@@ -6,16 +6,21 @@
  next step is to make the iframe size properly
  --------------------------------------------*/
 
-.sizing-box {
+.sizing-box{
     
     position: relative;
-    padding-bottom: 100%;
     height: 0;
     /*border: .1rem solid goldenrod;*/
     
 }
 
-.contact-box {
+.sizing-box.portfolio{
+    
+    padding-bottom: 100%;
+    
+}
+
+.sizing-box.contact{
     
     position: relative;
     padding-bottom: 80%;
@@ -23,7 +28,7 @@
     
 }
 
-.iframe-wrap.loaded iframe, .iframe-wrap iframe{
+.iframe-wrap iframe, .iframe-wrap iframe{
     
     position: absolute;
     top:0;
@@ -37,12 +42,12 @@
     
 }
 
-.iframe-wrap.loaded a, .iframe-wrap a{
+/*.iframe-wrap a, .iframe-wrap a{
     
     width: 100%;
     height: 100%;
     
-}
+}*/
 
 .iframe-wrap:hover .meta-overlay{
     
@@ -52,7 +57,8 @@
 
 .iframe-wrap .meta-overlay{
     
-    color: rgb(70,90,70);
+    z-index: 1!important;
+    color: rgb(50,70,70);
     position:absolute;
     top:0;
     left:0;

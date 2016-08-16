@@ -17,7 +17,7 @@
 
         <h1 class="headline"><a name="about"></a>Colin King-Bailey  <small>wants to code for you</small></h1>
   
-        <p class="headline lead">I've been hanging art for museums for the last eight years.<br>I'm studying CSS, html, and Javascript.<br>In 2017 I'll be looking for front end developer work.</p>'
+        <p class="headline lead">I've been hanging art for museums for the last eight years.<br>I'm studying CSS, html, and Javascript.<br>In 2017 I'll be looking for front end developer work.</p>
 
         <ul class="header-subnav">
 
@@ -37,37 +37,43 @@
         <div class="small-10 small-offset-1 column">
             <h2><a name="work"></a>work</h2>
             <div class="row">
-                <div class="small-4 column iframe-wrap loaded">
-                    <div class="callout">
-                        <div class="sizing-box">
-                            <a href="http://ckingbailey.com/bisbeevacationrental/index.html" target="_blank">
-                                <iframe src="http://ckingbailey.com/bisbeevacationrental/index.html" scrolling="no"></iframe>
-                                <div class="meta-overlay">
-                                    <p>Hilltop House in Bisbee, Arizona<br>Rent it now!<br>Bisbee is calling you</p>
-                                </div>
-                            </a>
+                <div class="small-4 column">
+
+                    <div class="callout iframe-wrap">
+
+                        <a class="meta-overlay" href="http://ckingbailey.com/bisbeevacationrental/index.html" target="_blank">Hilltop House in Bisbee, Arizona<br>Rent it now!<br>Bisbee is calling you</a>
+
+                        <div class="sizing-box portfolio">
+    
+                            <iframe src="http://ckingbailey.com/bisbeevacationrental/index.html" scrolling="no"></iframe>
+
                         </div>
+
                     </div>
+
+                </div>
+                
+
+                <div class="small-4 column">
+                    
+                    <div class="callout iframe-wrap">
+
+                        <a class="meta-overlay" "href="http://ckingbailey.com" target="_blank">My personal webpage...<br>very personal.</a>
+
+                        <div class="sizing-box portfolio">
+
+                            <iframe src="http://ckingbailey.com" scrolling="no"></iframe>
+                                    
+                        </div>
+                        
+                    </div>
+                    
                 </div>
                 
                 
-                <div class="small-4 column iframe-wrap loaded">
+                <div class="small-4 column iframe-wrap">
                     <div class="callout">
-                        <div class="sizing-box">
-                            <a href="http://ckingbailey.com" target="_blank">
-                                <iframe src="http://ckingbailey.com" scrolling="no"></iframe>
-                                <div class="meta-overlay">
-                                    <p>My personal webpage... very personal.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="small-4 column iframe-wrap loaded">
-                    <div class="callout">
-                        <div class="sizing-box">
+                        <div class="sizing-box portfolio">
                             <a href="http://ckingbailey.com/freecodecamp/katchadourian-tribute/katchadourian-tribute.html" target="_blank">
                                 <iframe src="http://ckingbailey.com/freecodecamp/katchadourian-tribute/katchadourian-tribute.html" scrolling="no"></iframe>
                                 <div class="meta-overlay">
@@ -89,7 +95,7 @@
             <h2><a name="contact"></a>contact</h2>
             
             <div class="callout primary">
-                <div class="contact-box">
+                <div class="sizing-box contact">
                     <div class="row">
                         <div class="small-10 column">
                             <h3><a href="mailto:ckingbailey@gmail.com"><span class="fi-mail"></span></a> ckingbailey@gmail.com
