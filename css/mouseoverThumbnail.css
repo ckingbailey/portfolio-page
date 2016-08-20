@@ -28,34 +28,13 @@
     
 }
 
-.iframe-wrap iframe, .iframe-wrap iframe{
-    
-    position: absolute;
-    top:0;
-    left:0;
-    visibility:visible;
-    opacity:1;
-    border: none;
-    box-shadow: none;
-    width: 100%;
-    height: 100%;
-    
-}
-
-/*.iframe-wrap a, .iframe-wrap a{
-    
-    width: 100%;
-    height: 100%;
-    
-}*/
-
-.iframe-wrap:hover .meta-overlay{
+.thumbnail-wrap:hover .meta-overlay{
     
     opacity:1
     
 }
 
-.iframe-wrap .meta-overlay{
+.thumbnail-wrap .meta-overlay{
     
     z-index: 1!important;
     color: rgb(50,70,70);
@@ -64,6 +43,7 @@
     left:0;
 
     height:100%;
+    width: 100%;
     
     border: 1.2rem solid rgba(235,245,255,.7);
     
@@ -77,11 +57,41 @@
     
 }
 
-/*here ends Codepen's code
- from here on CKB wrote the code.*/
+.thumbnail-wrap iframe{
+    
+    -ms-zoom: 0.25;
+    -moz-transform: scale(0.25);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.25);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+/*    position: absolute;
+    top:0;
+    left:0;*/
+    visibility:visible;
+    opacity:1;
+    border: none;
+    box-shadow: none;
+    width: 400%;
+    height: 400%;
+    overflow: hidden;
+    
+}
 
-.iframe-wrap:hover iframe{
+.thumbnail-wrap:hover iframe{
 
     opacity:0.1;
+    
+}
+
+.iframe-wrap {
+    
+    position: absolute;
+    top:0;
+    left:0;
+
+    height: 100%;
+    border: .2rem dashed lime;
     
 }

@@ -5,7 +5,7 @@
 
 $dark-grey: #292c2f;
 
-$medium-grey: #8f92c0;
+$medium-grey: #79a;
 
 $light-grey: #8d9093;
 
@@ -25,6 +25,8 @@ $lead-color: $light-grey;
 
 $header-bg: $another-blue;
 
+$header-bg-img: url('https://upload.wikimedia.org/wikipedia/commons/1/1c/OaklandPanorama2.140510.jpg');
+
 $subnav-link-padding: 0.9rem;
 
 $subnav-font-size: 0.75rem;
@@ -35,13 +37,19 @@ $header-height: 2.5rem;
 
 $transition: all .35s ease-in-out;
 
+$header-bg-opacity: .7;
 
+$header-bg-bottom-padding: 16.05rem;
+
+/*----------------------------------
+this here is the header and stuff
+-----------------------------------*/
 
 .header {
 
 text-align: center;
 
-background: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Oakland_California_20041129.jpg') no-repeat center center $header-bg;
+background: /*url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Oakland_California_20041129.jpg') no-repeat center center*/ $header-bg;
 
 background-size: cover;
 
@@ -54,14 +62,34 @@ padding-top: $header-height;
 padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
 
 
-
 .headline {
-
+position: relative;
+z-index: 1!important;
 color: #ffe;
 
+h1 {
+    font-weight: bold;
+}
 }
 
+small {
+    color: #eec;
 }
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: $header-bg-bottom-padding;
+    background: $header-bg-img no-repeat center center;
+    background-size:cover;
+    opacity: $header-bg-opacity;
+    z-index: 0!important;
+}
+}
+
 
 
 
@@ -131,11 +159,9 @@ transition: $transition;
 
 }
 
-//footer
-//copy-pasted from Zurb Building Blocks
-
-//modified with some of my own Scss
-//and a spelling correction
+/*-------------------------------------
+and this here is the footer and stuff
+--------------------------------------*/
 
 
 @mixin vertical-align {
