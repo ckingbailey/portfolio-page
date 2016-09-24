@@ -45,7 +45,7 @@
     height:100%;
     width: 100%;
 
-    border: 1.2rem solid rgba(235,245,255,.7);
+    border: 1.2rem solid rgba(200,220,255,.9);
 
     padding: 1.5rem; /*12px 15px 0 15px;*/
     box-sizing: border-box;
@@ -92,6 +92,6 @@
     left:0;
   overflow: hidden;
     height: 100%;
-    border: .2rem dashed lime;
+    /*border: .2rem dashed lime;*/
 
 }
