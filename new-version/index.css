@@ -82,10 +82,6 @@ body {
 
   .projects-li {
     margin: 0 0 1.25rem 0;
-    box-sizing: border-box;
-    width: fit-content;
-    text-align: inherit;
-    list-style-type: inherit;
   }
 
   .projects-li:last-child {
@@ -93,9 +89,7 @@ body {
   }
 
   .project-btn {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
+    display: block;
     transition: background-color .05s linear;
   }
 
@@ -132,15 +126,13 @@ body {
   }
 
   .project-display {
-    width: unset;
-    min-height: 42rem;
-    transition: width .4s linear, min-height .15s linear .25s;
+    position: relative;
+    width: 0; height: 0;
+    padding-right: calc(100% - 20px); padding-top: 66%;
+    transition: padding-right .2s linear, padding-top .15s linear .18s;
   }
 
   .project-display.empty-display {
-    width: 2.5rem;
-    height: 2.5rem;
-    min-height: 2.5rem;
-    max-height: 2.5rem;
-    transition: width .4s linear, min-height .3s linear .25s;
+    padding-right: 3.5rem; padding-top: 3.5rem;
+    transition: padding-right .4s linear, padding-top .3s linear .25s;
   }
