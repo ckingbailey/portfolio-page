@@ -1,3 +1,6 @@
+@import './desktop.css';
+@import './mobile.css';
+
 html {
   --purple: #93e;
   --green: lightSeaGreen;
@@ -7,7 +10,7 @@ html {
 * { box-sizing: border-box }
 
 body {
-  margin: 0;
+  margin: 0 0 2rem 0;
   height: 100%;
   font-family: Courier, serif;
 }
@@ -30,11 +33,6 @@ body {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: stretch;
-  margin: 2rem;
-}
-
-.row>*:nth-child(n+2) {
-  margin-left: 2rem;
 }
 
 .border {
@@ -90,18 +88,19 @@ body {
 .main-content {
   flex: 0 1 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: fit-content;
   max-width: calc(100vw - 2rem * 2);
 }
 
   .projects-nav {
-    min-width: 17.25rem;
+    flex-shrink: 0;
+    flex-basis: auto;
   }
 
     .projects-list {
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: row wrap;
       justify-content: flex-start;
       align-items: stretch;
       margin: 0;
@@ -137,14 +136,11 @@ body {
 
           .project-thumb {
             margin-top: .2rem;
-            width: 12rem;
-            height: 9rem;
             background-color: #ddd;
             transition: background-color .05s linear;
           }
 
   .project-display {
-    position: relative;
     width: 0; height: 0;
     padding-right: calc(100vw - 17.25rem - 2rem * 3 - 3px * 4);
     padding-top: 66%;
