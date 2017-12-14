@@ -70,6 +70,10 @@ this here is the header and stuff
     small {
       color: $subhead-color;
     }
+
+    p::before, p::after, br::before, br::after {
+      content: "\00a0\2022\00a0";
+    }
   }
   .header-bg {
     position: absolute;

@@ -2,12 +2,13 @@
 const pd = document.getElementById("projectDisplayArea");
 
 function onProjectBtnClick(event) {
-  // console.log("pd", pd);
-  pd.classList.remove("empty-display");
+  event.preventDefault();
+  if (Array.from(pd.classList).includes("empty-display")) {
+    pd.classList.remove("empty-display");
+  } else pd.classList.add("empty-display");
 }
 
 document.querySelectorAll(".project-btn").forEach(a => {
   a.addEventListener("click", onProjectBtnClick);
-  // console.log(a);
 });
 })();

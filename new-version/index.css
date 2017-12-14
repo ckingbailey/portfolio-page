@@ -4,12 +4,12 @@ html {
   --yellow: #e5bb14;
 }
 
+* { box-sizing: border-box }
+
 body {
   margin: 0;
-  box-sizing: content-box;
   height: 100%;
   font-family: Courier, serif;
-  text-align: left;
 }
 
 /* universal stuff */
@@ -25,11 +25,16 @@ body {
       );
 }
 
-.everything {
+.row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
+  margin: 2rem;
+}
+
+.row>*:nth-child(n+2) {
+  margin-left: 2rem;
 }
 
 .border {
@@ -37,12 +42,11 @@ body {
   outline: 1px solid var(--yellow);
   border: 1px solid var(--purple);
   border-radius: 1px;
-  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .backdrop {
   border-radius: 1px;
-  padding: .75rem;
   background-color: #eee;
 }
 
@@ -50,89 +54,105 @@ body {
   margin-top: 0;
 }
 
-/* shared attributes */
+/* shared styles */
+.contact-panel, .about-box {}
 
-.sidebar-left, .main-content {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-}
-
-.sidebar-left>*, .main-content>* {
-  padding: 1.25rem;
-}
-
-/* sidebar stuff */
-.sidebar-left {
-  flex: 0 1 auto;
-  width: fit-content;
-}
-
-  .contact-info {
-    font-size: .9rem;
-    font-style: normal;
+/* info and descendents of info */
+  .contact-panel {
+    flex: 0 1 auto;
+    width: fit-content;
+    min-width: 17.25rem;
   }
 
-  .projects-list {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
+    .contact-info {
+      padding: .75rem;
+      font-size: .9rem;
+      font-style: normal;
+    }
+
+  .about-box {
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: fit-content;
+    padding-left: 2rem;
   }
 
-  .projects-li {
-    margin: 0 0 1.25rem 0;
-  }
-
-  .projects-li:last-child {
-    margin-bottom: 0;
-  }
-
-  .project-btn {
-    display: block;
-    transition: background-color .05s linear;
-  }
-
-  .project-btn:hover {
-    background-color: #dededf;
-    transition: background-color .03s linear;
-  }
-
-  .project-btn:hover>.project-thumb {
-    background-color: #c9c9ca;
-    transition: background-color .03s linear;
-  }
-
-  .project-thumb {
-    margin-top: .2rem;
-    width: 12rem;
-    height: 9rem;
-    background-color: #ddd;
-    transition: background-color .05s linear;
-  }
+    .about-text {
+      margin: 0 0 .25rem 0;
+      padding: 0;
+      line-height: 2rem;
+    }
 
 /* main-area content */
 .main-content {
-  flex: 1 0 auto;
+  flex: 0 1 auto;
   display: flex;
-  flex-flow: column nowrap;
-  margin-right: 2rem;
+  flex-flow: row nowrap;
   width: fit-content;
+  max-width: calc(100vw - 2rem * 2);
 }
 
-  .about {
-    width: fit-content;
-    line-height: 2rem;
+  .projects-nav {
+    min-width: 17.25rem;
   }
+
+    .projects-list {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+      .projects-li {
+        flex: 1 0 auto;
+        margin: 0 0 1.25rem 0;
+        text-align: center;
+      }
+
+      .projects-li:last-child {
+        margin-bottom: 0;
+      }
+
+        .project-btn {
+          display: block;
+          padding: .5rem;
+          transition: background-color .05s linear;
+        }
+
+        .project-btn:hover {
+          background-color: #dededf;
+          transition: background-color .03s linear;
+        }
+
+          .project-btn:hover>.project-thumb {
+            background-color: #c9c9ca;
+            transition: background-color .03s linear;
+          }
+
+          .project-thumb {
+            margin-top: .2rem;
+            width: 12rem;
+            height: 9rem;
+            background-color: #ddd;
+            transition: background-color .05s linear;
+          }
 
   .project-display {
     position: relative;
     width: 0; height: 0;
-    padding-right: calc(100% - 20px); padding-top: 66%;
+    padding-right: calc(100vw - 17.25rem - 2rem * 3 - 3px * 4);
+    padding-top: 66%;
     transition: padding-right .2s linear, padding-top .15s linear .18s;
   }
 
   .project-display.empty-display {
     padding-right: 3.5rem; padding-top: 3.5rem;
-    transition: padding-right .4s linear, padding-top .3s linear .25s;
+    /*transition: padding-right .12s linear .16s, padding-top .18s linear;*/
+    transition: padding-right .18s linear, padding-top .12s linear .15s;
   }

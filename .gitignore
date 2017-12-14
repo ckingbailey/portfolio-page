@@ -1,11 +1,9 @@
+.DS_Store
+
 reference/
-
 oldCommits/
-
 img/pieces/
-
 sass/.sass-cache/
 
 *.patch
-
 *.css.map

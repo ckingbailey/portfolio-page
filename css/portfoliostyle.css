@@ -17,6 +17,8 @@ this here is the header and stuff
       font-weight: bold; }
     .header .headline small {
       color: #ddb; }
+    .header .headline p::before, .header .headline p::after, .header .headline br::before, .header .headline br::after {
+      content: "\00a0\2022\00a0"; }
   .header .header-bg {
     position: absolute;
     top: 0;
