@@ -142,7 +142,6 @@ body {
 
   .project-display {
     width: 0; height: 0;
-    padding-right: calc(100vw - 17.25rem - 2rem * 3 - 3px * 4);
     padding-top: 66%;
     transition: padding-right .2s linear, padding-top .15s linear .18s;
   }

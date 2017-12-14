@@ -19,22 +19,22 @@
     flex-grow: 1;
   }
 
-  .list-wrapper {
-    overflow: scroll;
-  }
-
-    .slide-track {
-      width: max-content;
+    .list-wrapper {
+      overflow: scroll;
     }
 
-      .project-list {
-        flex-flow: row wrap;
+      .slide-track {
+        width: max-content;
       }
 
-        .project-thumb {
-          width: 8rem;
-          height: 6rem;
+        .projects-li:nth-last-child(n+2) {
+          margin-right: .6rem;
         }
+
+          .project-thumb {
+            width: 8rem;
+            height: 6rem;
+          }
 
   .project-display {
     padding-right: calc(100vw - 2rem);
