@@ -1,57 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ckb, front-end super-genius</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body>
-    <aside class="row info">
-      <section class="contact-panel border">
-        <h2 class="panel-heading">Contact</h2>
-        <address class="contact-info backdrop">Colin King-Bailey<br>
-          github.com/ckingbailey<br>
-          ckingbailey<i>[@]</i>gmail<i>[.]</i>com</address>
-      </section>
-      <header class="about-box border">
-        <p class="about-text">I'm a front-end developer with a flair for design &#x1F481;<br>
-          I want these lines to fill some space &#x1F4D0;<br>
-          but I don't have enough content to write here yet &#x1F4F0;
-        </p>
+    <main class="container">
+      <header class="row info">
+        <aside class="one-third column contact-panel border">
+          <h2 class="panel-heading">Contact</h2>
+          <address class="contact-info backdrop">Colin King-Bailey<br
+            >github.com/ckingbailey<br
+            >ckingbailey&shy;<i>[@]</i>gmail&shy;<i>[.]</i>com</address>
+        </aside>
+        <section class="two-thirds column about-box border">
+          <p class="about-text"
+          >I'm a front-end developer with a flair for design &#x1F481;<br
+          >But don't pigeonhole me &#x1F426;<br
+          >I can wire up your Express server and query your NoSQL database, too &#x1F4BE;
+          </p>
+        </section>
       </header>
-    </aside>
-    <main class="row main-content">
-      <nav class="projects-nav border">
-        <h2 class="panel-heading">Projects</h2>
-        <div class="list-wrapper">
-          <div class="slide-track">
-            <ul class="projects-list">
-              <li class="projects-li">
-                <a class="project-btn backdrop" role="button">
-                  <img class="project-thumb x"/>
-                </a>
-              </li>
-              <li class="projects-li">
-                <a class="project-btn backdrop" role="button">
-                  <img class="project-thumb x"/>
-                </a>
-              </li>
-              <li class="projects-li">
-                <a class="project-btn backdrop" role="button">
-                  <img class="project-thumb x"/>
-                </a>
-              </li>
-              <li class="projects-li">
-                <a class="project-btn backdrop" role="button">
-                  <img class="project-thumb x"/>
-                </a>
-              </li>
-            </ul>
+      <section class="row">
+        <nav class="one-third column projects-nav border">
+          <h2 class="panel-heading">Projects</h2>
+          <div class="list-wrapper">
+            <div class="slide-track">
+              <ul class="projects-list">
+                <li class="projects-li">
+                  <a class="project-btn backdrop" role="button">
+                    <img class="project-thumb x"/>
+                  </a>
+                </li>
+                <li class="projects-li">
+                  <a class="project-btn backdrop" role="button">
+                    <img class="project-thumb x"/>
+                  </a>
+                </li>
+                <li class="projects-li">
+                  <a class="project-btn backdrop" role="button">
+                    <img class="project-thumb x"/>
+                  </a>
+                </li>
+                <li class="projects-li">
+                  <a class="project-btn backdrop" role="button">
+                    <img class="project-thumb x"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <section id="projectDisplayArea" class="project-display empty-display backdrop"></section>
+        </nav>
+        <section
+          id="projectDisplayArea"
+          class="two-thirds column project-display empty-display backdrop"
+        ></section>
+      </section>
     </main>
     <script type="text/javascript" src="script.js"></script>
   </body>
