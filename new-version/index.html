@@ -9,55 +9,63 @@
   <body>
     <main class="container">
       <header class="row info">
-        <aside class="one-third column contact-panel border">
-          <h2 class="panel-heading">Contact</h2>
-          <address class="contact-info backdrop">Colin King-Bailey<br
-            >github.com/ckingbailey<br
-            >ckingbailey&shy;<i class="email-punctuation">[@]</i>gmail&shy;<i class="email-punctuation">[.]</i>com</address>
-        </aside>
-        <section class="two-thirds column about-box border">
-          <p class="about-text"
-          >I'm a front-end developer with a flair for design &#x1F481;<br
-          >But don't pigeonhole me &#x1F426;<br
-          >I can wire up your Express server and query your NoSQL database, too &#x1F4BE;
-          </p>
-        </section>
+        <div class="column column-33">
+          <aside class="column-content contact-panel border">
+            <h2 class="panel-heading">Contact</h2>
+            <address class="contact-info backdrop">Colin King-Bailey<br
+              >github.com/ckingbailey<br
+              >ckingbailey&shy;<i class="email-punctuation">[@]</i>gmail&shy;<i class="email-punctuation">[.]</i>com</address>
+          </aside>
+        </div>
+        <div class="column column-67">
+          <section class="column-content about-box border">
+            <p class="about-text"
+            >I'm a front-end developer with a flair for design &#x1F481;<br
+            >But don't pigeonhole me &#x1F426;<br
+            >I can wire up your Express server and query your NoSQL database, too &#x1F4BE;
+            </p>
+          </section>
+        </div>
       </header>
-      <section class="row">
-        <nav class="one-third column projects-nav border">
-          <h2 class="panel-heading">Projects</h2>
-          <div class="list-wrapper">
-            <div class="slide-track">
-              <ul class="projects-list">
-                <li class="projects-li">
-                  <a class="project-btn backdrop" role="button">
-                    <img class="project-thumb x"/>
-                  </a>
-                </li>
-                <li class="projects-li">
-                  <a class="project-btn backdrop" role="button">
-                    <img class="project-thumb x"/>
-                  </a>
-                </li>
-                <li class="projects-li">
-                  <a class="project-btn backdrop" role="button">
-                    <img class="project-thumb x"/>
-                  </a>
-                </li>
-                <li class="projects-li">
-                  <a class="project-btn backdrop" role="button">
-                    <img class="project-thumb x"/>
-                  </a>
-                </li>
-              </ul>
+      <div class="row">
+        <div class="column column-33">
+          <nav class="column-content projects-nav border">
+            <h2 class="panel-heading">Projects</h2>
+            <div class="list-wrapper">
+              <div class="slide-track">
+                <ul class="projects-list">
+                  <li class="projects-li">
+                    <a class="project-btn backdrop" role="button">
+                      <img class="project-thumb x"/>
+                    </a>
+                  </li>
+                  <li class="projects-li">
+                    <a class="project-btn backdrop" role="button">
+                      <img class="project-thumb x"/>
+                    </a>
+                  </li>
+                  <li class="projects-li">
+                    <a class="project-btn backdrop" role="button">
+                      <img class="project-thumb x"/>
+                    </a>
+                  </li>
+                  <li class="projects-li">
+                    <a class="project-btn backdrop" role="button">
+                      <img class="project-thumb x"/>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </nav>
-        <section
-          id="projectDisplayArea"
-          class="two-thirds column project-display empty-display backdrop"
-        ></section>
-      </section>
+          </nav>
+        </div>
+        <div class="column column-67">
+          <section
+            id="projectDisplayArea"
+            class="column-content project-display empty-display backdrop"
+          ></section>
+        </div>
+      </div>
     </main>
     <script type="text/javascript" src="script.js"></script>
   </body>

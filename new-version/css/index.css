@@ -1,4 +1,4 @@
-@import './skeleton.css';
+@import './milligram.css';
 /* @import './desktop.css'; */
 /* @import './mobile.css'; */
 
@@ -16,6 +16,21 @@ body {
 .container {
   margin-top: 2rem;
 }
+.column-content {
+  margin-bottom: 2rem;
+}
+.border {
+  box-shadow: 0 0 0 2px var(--green);
+  outline: 1px solid var(--yellow);
+  border: 1px solid var(--purple);
+  border-radius: 1px;
+}
+.backdrop {
+  border-radius: 1px;
+  background-color: #eee;
+}
+.panel-heading {
+}
 .x {
   background-image:
     linear-gradient(
@@ -27,43 +42,20 @@ body {
       #999 calc(50% + 1px), transparent calc(50% + 1px)
       );
 }
-.border {
-  box-shadow: 0 0 0 2px var(--green);
-  outline: 1px solid var(--yellow);
-  border: 1px solid var(--purple);
-  border-radius: 1px;
-  padding: 1rem;
-}
-.backdrop {
-  border-radius: 1px;
-  background-color: #eee;
-}
-.panel-heading {
-  margin-top: 0;
-}
 
 /* shared styles */
 .info {
-  margin-bottom: 2rem;
 }
 .contact-info {
-  padding: .75rem;
-  font-style: normal;
 }
   .about-box {
-    height: inherit;
   }
     .about-text {
-      flex: 0 0 auto;
-      margin: 0 0 .25rem 0;
-      padding: 0;
     }
       .projects-li {
         list-style-type: none;
       }
         .project-btn {
-          display: block;
-          padding: .5rem;
           transition: background-color .05s linear;
         }
         .project-btn:hover {
@@ -75,17 +67,15 @@ body {
             transition: background-color .03s linear;
           }
           .project-thumb {
-            margin-top: .2rem;
             background-color: #ddd;
             transition: background-color .05s linear;
           }
   .project-display {
-    width: 0; height: 0;
+    /* width: 0; height: 0;
     padding-top: 66%;
-    transition: padding-right .2s linear, padding-top .15s linear .18s;
+    transition: padding-right .2s linear, padding-top .15s linear .18s; */
   }
   .project-display.empty-display {
-    padding-right: 3.5rem; padding-top: 3.5rem;
-    /*transition: padding-right .12s linear .16s, padding-top .18s linear;*/
-    transition: padding-right .18s linear, padding-top .12s linear .15s;
+    /* padding-right: 3.5rem; padding-top: 3.5rem; */
+    /* transition: padding-right .18s linear, padding-top .12s linear .15s; */
   }
