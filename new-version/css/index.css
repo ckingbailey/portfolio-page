@@ -52,6 +52,7 @@ p {
 }
 .panel-heading {
   margin-top: calc(-.7 * var(--pad));
+  margin-bottom: calc(.25 * var(--pad));
   font-size: 2.2rem;
 }
 .x {
@@ -72,14 +73,28 @@ p {
 .contact-info {
 }
   .about-panel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
     height: 100%;
   }
     .about-text {
     }
+    .projects-list {
+      margin: 0;
+    }
       .projects-li {
+        margin-bottom: var(--pad);
         list-style-type: none;
       }
+      .projects-li:last-child {
+        margin-bottom: calc(0.5 * var(--pad));
+      }
         .project-btn {
+          display: block;
+          width: 100%;
+          height: 12rem;
           transition: background-color .05s linear;
         }
         .project-btn:hover {
