@@ -1,6 +1,32 @@
 const onProjectBtnClick = (function() {
   const pd = document.getElementById("projectDisplayArea");
   const img = pd.children.projectView;
+  const projectInfo = {
+    bisbeevacationrental: {
+      name: "Bisbee Vacation Rental",
+      description: "Marketing page for a mountain cottage in Bisbee, AZ",
+      stack: ["jQuery", "Slick Carousel", "VRBO API"],
+      link: "http://bisbeevacationrental.com"
+    },
+    turtrello: {
+      name: "Turtrello",
+      description: "Trello clone",
+      stack: ["React", "Firebase"],
+      link: "http://ckingbailey.github.io"
+    },
+    localweatherapp: {
+      name: "Local Weather App",
+      description: "See a charming css animation for the weather in your area",
+      stack: ["jQuery", "CSS"],
+      link: "http://ckingbailey.com/weather"
+    },
+    chinguprojectshowcase: {
+      name: "Chingu Project Showcase",
+      description: "See and edit data for projects completed by Chingu Build-To-Learn remote teams",
+      stack: ["React", "Node", "Express", "MongoDB", "Mongoose"],
+      link: "http://geckos-05-winter17.herokuapp.com"
+    }
+  }
 
   return function handleProjectBtnClick(event) {
     event.preventDefault();
