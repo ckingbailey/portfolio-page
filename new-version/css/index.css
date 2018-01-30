@@ -9,10 +9,11 @@ html {
   --gap: 1.5rem;
   --pad: 1rem;
   --pad-text: calc(.75 * var(--pad)) var(--pad) calc(.825 * var(--pad));
-  --sm-multiplier: .8;
-  --sm-pad-text: calc(var(--sm-multiplier) * .8 * var(--pad))
-                    calc(var(--sm-multiplier) * var(--pad))
-                    calc(var(--sm-multiplier) * .85 * var(--pad));
+  --less-multiplier: .8;
+  --pad-text-less: calc(var(--less-multiplier) * .8 * var(--pad))
+                    calc(var(--less-multiplier) * var(--pad))
+                    calc(var(--less-multiplier) * .85 * var(--pad));
+  --less-line-ht: 1.01;
 }
 
 body {
@@ -44,7 +45,7 @@ p {
   border-radius: 1px;
 }
 .callout {
-  padding: var(--sm-pad-text);
+  padding: var(--pad-text-less);
 }
 .backdrop {
   border-radius: 1px;
@@ -98,7 +99,7 @@ p {
           width: 100%;
           /* height: 12rem; */
           padding: var(--pad);
-          line-height: 1.01;
+          line-height: var(--less-line-ht);
           transition: background-color .05s linear;
         }
         .project-btn:hover {
@@ -118,11 +119,15 @@ p {
             transition: background-color .05s linear;
           }
   .project-display {
+    padding: var(--pad);
+    line-height: var(--less-line-ht);
     /* width: 0; height: 0;
     padding-top: 66%;
     transition: padding-right .2s linear, padding-top .15s linear .18s; */
   }
   .project-display.empty-display {
+    width: 0;
+    height: 0;
     /* padding-right: 3.5rem; padding-top: 3.5rem; */
     /* transition: padding-right .18s linear, padding-top .12s linear .15s; */
   }
