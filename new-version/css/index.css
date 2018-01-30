@@ -8,9 +8,9 @@ html {
   --yellow: #e5bb14;
   --gap: 1.5rem;
   --pad: 1rem;
-  --pad-content: calc(.75 * var(--pad)) var(--pad) calc(.825 * var(--pad));
+  --pad-text: calc(.75 * var(--pad)) var(--pad) calc(.825 * var(--pad));
   --sm-multiplier: .8;
-  --sm-pad-content: calc(var(--sm-multiplier) * .8 * var(--pad))
+  --sm-pad-text: calc(var(--sm-multiplier) * .8 * var(--pad))
                     calc(var(--sm-multiplier) * var(--pad))
                     calc(var(--sm-multiplier) * .85 * var(--pad));
 }
@@ -35,7 +35,7 @@ p {
   margin-bottom: var(--gap);
 }
 .panel {
-  padding: var(--pad-content);
+  padding: var(--pad-text);
 }
 .border {
   box-shadow: 0 0 0 2px var(--green);
@@ -44,7 +44,7 @@ p {
   border-radius: 1px;
 }
 .callout {
-  padding: var(--sm-pad-content);
+  padding: var(--sm-pad-text);
 }
 .backdrop {
   border-radius: 1px;
@@ -97,22 +97,24 @@ p {
           display: block;
           width: 100%;
           /* height: 12rem; */
-          padding: var(--pad-content);
+          padding: var(--pad);
+          line-height: 1.01;
           transition: background-color .05s linear;
         }
         .project-btn:hover {
           background-color: #dededf;
-          transition: background-color .03s linear;
+          transition: all .03s linear;
         }
           .project-btn:hover>.project-thumb {
-            background-color: #c9c9ca;
-            transition: background-color .03s linear;
+            opacity: 1;
+            border: 1px solid var(--green);
+            transition: all .03s linear;
           }
           .project-thumb {
+            opacity: .825;
             width: 100%;
             height: 100%;
             border: 1px solid #d0d0d0;
-            background-color: #ddd;
             transition: background-color .05s linear;
           }
   .project-display {

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ckb, front-end super-genius</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body>
@@ -35,22 +36,32 @@
               <div class="slide-track">
                 <ul class="projects-list">
                   <li class="projects-li">
-                    <a class="project-btn backdrop" role="button">
+                    <a
+                      data-projectnum="0"
+                      class="project-btn backdrop"
+                      role="button"
+                      onclick="return onProjectBtnClick(event)"
+                    >
                         <img class="project-thumb x" src="img/bisbeevacationrental_thumb.png">
                     </a>
                   </li>
                   <li class="projects-li">
-                    <a class="project-btn backdrop" role="button">
+                    <a
+                      data-projectnum="1"
+                      class="project-btn backdrop"
+                      role="button"
+                      onclick="return onProjectBtnClick(event)"
+                    >
+                      <img class="project-thumb x" src="img/turtrello_thumb.png">
+                    </a>
+                  </li>
+                  <li class="projects-li">
+                    <a data-projectnum="2" class="project-btn backdrop" role="button">
                       <img class="project-thumb x">
                     </a>
                   </li>
                   <li class="projects-li">
-                    <a class="project-btn backdrop" role="button">
-                      <img class="project-thumb x">
-                    </a>
-                  </li>
-                  <li class="projects-li">
-                    <a class="project-btn backdrop" role="button">
+                    <a data-projectnum="3" class="project-btn backdrop" role="button">
                       <img class="project-thumb x">
                     </a>
                   </li>
@@ -65,7 +76,7 @@
             class="column-content project-display empty-display backdrop"
           >
             <h3 id="projectHeading" class="project-heading"></h3>
-            <img>
+            <img id="projectView" class="project-view">
             <p id="projectDescription" class="project-description"></p>
             <p id="projectTech" class="project-tech"></p>
             <a id="projectLink" class="project-link"></a>
