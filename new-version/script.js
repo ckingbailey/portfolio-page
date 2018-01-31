@@ -1,6 +1,10 @@
 const onProjectBtnClick = (function() {
   const pd = document.getElementById("projectDisplayArea");
+  const heading = pd.children.projectHeading;
   const img = pd.children.projectView;
+  const description = pd.children.projectDescription;
+  const stack = pd.children.projectTech;
+  const link = pd.children.projectLink;
   const projectInfo = {
     bisbeevacationrental: {
       name: "Bisbee Vacation Rental",
@@ -47,15 +51,24 @@ const onProjectBtnClick = (function() {
       // or if btn for project other than currently loaded project is clicked
       // load project view
       pd.classList.remove("empty-display");
-      console.log(btn, targetProject);
+      // load content into element, top to bottom:
+      heading.innerText = projectInfo[targetProject].name;
       img.setAttribute("src", `img/${targetProject}.png`);
       img.setAttribute("data-displayfor", targetProject);
+      description.innerText = projectInfo[targetProject].description;
+      stack.innerText = projectInfo[targetProject].stack.join(", ");
+      link.innerText = projectInfo[targetProject].link;
     }
     // if btn for currently loaded project is clicked, close it
     else {
       pd.classList.add("empty-display");
+      // unload content, top to bottom:
+      heading.innerText = "";
       img.setAttribute("src", "");
       img.setAttribute("data-displayfor", "");
+      description.innerText = "";
+      stack.innerText = "";
+      link.innerText = "";
     }
   }
 })();
