@@ -32,7 +32,7 @@ p {
 .container {
   margin: var(--gap) auto 0;
 }
-.cell {
+.section {
   margin-bottom: var(--gap);
 }
 .panel {
