@@ -6,10 +6,16 @@ const onProjectBtnClick = (function() {
   const stack = pd.children.projectTech;
   const link = pd.children.projectLink;
   const projectInfo = {
+    svbx: {
+      "name": "svbx.org",
+      "description": "Database and web interface for tracking commissioning of Silicon Valley BART Extension",
+      "stack": ["PHP", "MySQL", "JavaScript DOM APIs", "D3.js"],
+      "link": "https://svbx.org"
+    },
     bisbeevacationrental: {
       name: "Bisbee Vacation Rental",
       description: "Marketing page for a mountain cottage in Bisbee, AZ",
-      stack: ["jQuery", "Slick Carousel", "VRBO API"],
+      stack: ["HTML", "CSS", "jQuery"],
       link: "http://bisbeevacationrental.com"
     },
     turtrello: {
@@ -58,17 +64,19 @@ const onProjectBtnClick = (function() {
       description.innerText = projectInfo[targetProject].description;
       stack.innerText = projectInfo[targetProject].stack.join(", ");
       link.innerText = projectInfo[targetProject].link;
+      link.setAttribute("href", projectInfo[targetProject].link);
     }
     // if btn for currently loaded project is clicked, close it
     else {
       pd.classList.add("empty-display");
       // unload content, top to bottom:
       heading.innerText = "";
-      img.setAttribute("src", "");
-      img.setAttribute("data-displayfor", "");
+      img.removeAttribute("src");
+      img.removeAttribute("data-displayfor");
       description.innerText = "";
       stack.innerText = "";
       link.innerText = "";
+      link.removeAttribute("href");
     }
   }
 })();
