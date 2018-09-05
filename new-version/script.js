@@ -64,6 +64,7 @@ const onProjectBtnClick = (function() {
       description.innerText = projectInfo[targetProject].description;
       stack.innerText = projectInfo[targetProject].stack.join(", ");
       link.innerText = projectInfo[targetProject].link;
+      link.setAttribute("href", projectInfo[targetProject].link);
     }
     // if btn for currently loaded project is clicked, close it
     else {
@@ -75,6 +76,7 @@ const onProjectBtnClick = (function() {
       description.innerText = "";
       stack.innerText = "";
       link.innerText = "";
+      link.removeAttribute("href");
     }
   }
 })();
