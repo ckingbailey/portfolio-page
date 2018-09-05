@@ -122,18 +122,22 @@ p {
             transition: background-color .05s linear;
           }
   .project-display {
-    padding: var(--pad);
+    padding-top: var(--pad); padding-bottom: var(--pad);
+    padding-left: calc(var(--pad) / var(--less-multiplier)); padding-right: calc(var(--pad) / var(--less-multiplier));
     line-height: var(--less-line-ht);
-    /* width: 0; height: 0;
-    padding-top: 66%;
-    transition: padding-right .2s linear, padding-top .15s linear .18s; */
   }
   .project-display.empty-display {
     width: 0;
     height: 0;
-    /* padding-right: 3.5rem; padding-top: 3.5rem; */
-    /* transition: padding-right .18s linear, padding-top .12s linear .15s; */
   }
+  .project-display :nth-child(n-1) {
+    margin-bottom: .75rem;
+  }
+  .project-heading {
+      margin-bottom: calc(var(--pad) / var(--less-multiplier));
+      font-size: 1.65rem;
+      line-height: 1.2;
+    }
 
 @media only screen and (min-width: 64.0625rem) {
   .container {
