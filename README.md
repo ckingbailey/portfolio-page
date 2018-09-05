@@ -1,2 +1,2 @@
-# portfolio-page
-one-page portfolio created as a project for FreeCodeCamp
+# CKB Portfolio Page
+Self-explanatory: this is my portfolio
